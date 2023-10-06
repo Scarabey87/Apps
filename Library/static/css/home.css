@@ -1,3 +1,22 @@
 body {
-    background: darkred;
+    background: cadetblue;
+}
+h1 {
+    color: blue;
+}
+input{
+    background-color: #1a1d20;
+}
+#exampleInputPassword1 {
+    width: 250px;
+
+}
+
+#exampleInputEmail1 {
+    width: 250px;
+
+}
+
+.main{
+    margin-left: 50px;
 }

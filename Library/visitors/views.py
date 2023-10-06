@@ -14,12 +14,12 @@ from django.shortcuts import render
 #     return HttpResponse('Banned visitors')
 #
 #
-# def books(request, name, genre):
-#     return HttpResponse(f"""
-#             <h2>О пользователе</h2>
-#             <p>Имя: {name}</p>
-#             <p>Возраст: {genre}</p>
-#     """)
+def books(request, name, genre):
+     return HttpResponse(f"""
+             <h2>О пользователе</h2>
+             <p>Имя: {name}</p>
+             <p>Возраст: {genre}</p>
+     """)
 
 def home(request):
     return render(request, 'main/home.html')

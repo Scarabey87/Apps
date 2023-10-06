@@ -19,10 +19,9 @@ from django.urls import path, re_path, include
 from visitors import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('visitors.urls'), kwargs={"balance": '3500'})
+    path("admin/", admin.site.urls),
+    path("", include("visitors.urls"))
     # re_path(r'^visitors/banned', views.banned_visitors),
     # re_path(r'^visitors/books', views.books, kwargs={"name": 'Вий', 'genre': 'Horror'}),
     # re_path(r'^visitors', views.visitors)
-
 ]

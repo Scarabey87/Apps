@@ -17,11 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 from visitors import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("visitors.urls"))
-    # re_path(r'^visitors/banned', views.banned_visitors),
-    # re_path(r'^visitors/books', views.books, kwargs={"name": 'Вий', 'genre': 'Horror'}),
-    # re_path(r'^visitors', views.visitors)
-]
+                  path("admin/", admin.site.urls),
+                  path("", include("visitors.urls")),
+                  # re_path(r'^visitors/banned', views.banned_visitors),
+                  # re_path(r'^visitors/books', views.books, kwargs={"name": 'Вий', 'genre': 'Horror'}),
+                  # re_path(r'^visitors', views.visitors),
+                  path('test', include("visitors.urls"), kwargs={"name": "grade A"})
+
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,22 +1,66 @@
 body {
-    background: cadetblue;
-}
-h1 {
-    color: blue;
-}
-input{
-    background-color: #1a1d20;
-}
-#exampleInputPassword1 {
-    width: 250px;
-
+    background-color: #19a6b0;
 }
 
-#exampleInputEmail1 {
-    width: 250px;
-
+.MainBlock {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e4eded;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin: -125px 0 0 -125px;
+    border-radius: 10px;
+    border: 5px solid red;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
+.nav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.menu a {
+    display: inline;
+}
+
+li:hover {
+    background-color: goldenrod;
+}
+
+.menu li {
+    float: left;
+    padding: 30px;
+}
+
+ul {
+    display: table-cell;
+    margin: 5px;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+}
 .main{
-    margin-left: 50px;
+margin:30px;
+width:400px;
+height:100px;
 }

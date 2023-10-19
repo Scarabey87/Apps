@@ -53,7 +53,7 @@ let g = ''
     .render(<input
         type = 'input'
         placeholder='Name'
-        value = 
+
     />
     );
     ReactDOM    

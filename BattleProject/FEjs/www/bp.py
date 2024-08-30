@@ -27,7 +27,14 @@ a2 = fighters(rnd_names.rand()[0],rnd_names.rand()[1],rnd_names.rand()[2],rnd_na
 #             Rate int);
 #             """)
 a = (rnd_names.rand()[0],rnd_names.rand()[1],rnd_names.rand()[2],rnd_names.rand()[3])
-cur.execute('insert into fighters values(?,?,?,?);', a)
-cur.execute('select * from fighters')
+# cur.execute('insert into fighters values(?,?,?,?);', a)
+command = input('Enter query: ')
+cur.execute(command)
+
+for p in cur.fetchall():
+    print(p[0::])
+
 conn.commit()
 conn.close()
+
+
